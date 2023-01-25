@@ -4,16 +4,12 @@ const pessoa = {
     idade: 29,
 }
 
-const carro = {
-    marca: 'Toyota',
-    proprietario: { ...pessoa }
+for (const chave in pessoa) {
+    console.log(chave, ": ", pessoa[chave]);
 }
 
-const carros = [carro];
-
-const empresa = {
-    nome: 'Toyota',
-    carros
+// ["nome", "Ariel"]
+// ["sobrenome", "Sardinha"]
+for (const [chave, valor] of Object.entries(pessoa)) {
+    console.log(chave, ': ', valor);
 }
-
-console.log(empresa.carros);

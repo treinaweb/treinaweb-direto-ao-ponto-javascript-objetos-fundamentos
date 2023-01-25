@@ -1,16 +1,15 @@
 
-const { nome, sobrenome } = {
+const { nome: nomePessoa, sobrenome } = {
     nome: 'Ariel',
     sobrenome: 'Sardinha',
     idade: 29,
 }
-console.log(sobrenome);
 
 
-const { marca, proprietario: { idade }, ...carro } = {
+const { marca, proprietario: { idade, nome: nomeProprietarioDoCarro }, ...carro } = {
     marca: 'Toyota',
     proprietario: {
-        nome: 'Ariel',
+        nome: 'Carlos',
         idade: 29
     },
     ano: 2023,
@@ -19,4 +18,4 @@ const { marca, proprietario: { idade }, ...carro } = {
     }
 }
 
-console.log(carro, nome);
+console.log(nomePessoa, nomeProprietarioDoCarro);

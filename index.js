@@ -1,33 +1,23 @@
-/// propriedades -> são as caracteristicas do objeto
-/// método -> são as ações realizadas pelo objeto
-
 const carro = {
     marca: 'Toyota',
-    modelo: 'Corola',
-    ano: '2023',
-    ligar: function () {
-        console.log('O carro ligou.');
-    },
-    desligar() {
-        console.log('O carro desligou');
-
-    }
+    modelo: 'Corola'
 }
 
-console.log(carro.modelo);
-console.log(carro.marca);
-carro.ligar();
-carro.desligar();
+// atribuir novo método e propriedade pela notação de ponto
+carro.ano = 2023;
+carro.ligar = () => {
+    console.log('O carro ligou');
+}
 
+// atribuir novo método e propriedade pela notação de colchetes
+carro['proprietario'] = 'Ariel';
+carro['editarProprietario'] = function (novoProprietario) {
+    console.log(`O novo proprietário é: ${novoProprietario}`);
+    this.proprietario = novoProprietario;
+}
 
-const pessoa = new Object({
-    nome: 'Ariel',
-    sobrenome: 'Sardinha',
-    idade: 29,
-    apresentar() {
+// carro['editarProprietario']('Pedro');
 
-        console.log(`Olá, meu nome é ${this.nome} e tenho ${this.idade} anos`);
-    }
-})
+carro.editarProprietario('Daniel');
 
-pessoa.apresentar();
+console.log(carro);

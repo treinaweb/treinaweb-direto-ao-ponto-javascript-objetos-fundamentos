@@ -1,11 +1,33 @@
-// const novoObjeto = undefined;
+/// propriedades -> são as caracteristicas do objeto
+/// método -> são as ações realizadas pelo objeto
 
-// Objeto JavaScript
-// {chave: valor}
-// Criando pelo construtor
-const forma1 = new Object();
-// Criando pela notação literal
-const forma2 = {};
+const carro = {
+    marca: 'Toyota',
+    modelo: 'Corola',
+    ano: '2023',
+    ligar: function () {
+        console.log('O carro ligou.');
+    },
+    desligar() {
+        console.log('O carro desligou');
 
-console.log(typeof forma1);
-console.log(typeof forma2);
+    }
+}
+
+console.log(carro.modelo);
+console.log(carro.marca);
+carro.ligar();
+carro.desligar();
+
+
+const pessoa = new Object({
+    nome: 'Ariel',
+    sobrenome: 'Sardinha',
+    idade: 29,
+    apresentar() {
+
+        console.log(`Olá, meu nome é ${this.nome} e tenho ${this.idade} anos`);
+    }
+})
+
+pessoa.apresentar();

@@ -1,28 +1,22 @@
-const pessoa = {
+
+const { nome, sobrenome } = {
     nome: 'Ariel',
-    sobrenome: 'Santiago',
+    sobrenome: 'Sardinha',
     idade: 29,
-    ligar() { }
-};
+}
+console.log(sobrenome);
 
-if ("nome" in pessoa) {
-    console.log("Existe o nome no objeto pessoa");
+
+const { marca, proprietario: { idade }, ...carro } = {
+    marca: 'Toyota',
+    proprietario: {
+        nome: 'Ariel',
+        idade: 29
+    },
+    ano: 2023,
+    ligar() {
+        console.log('ligou');
+    }
 }
 
-if (pessoa.sobrenome !== undefined) {
-    console.log('Existe o sobrenome no objeto pessoa');
-}
-
-if (pessoa['sobrenome'] !== undefined) {
-    console.log('Existe o sobrenome no objeto pessoa');
-}
-
-if (pessoa.hasOwnProperty('idade')) {
-    console.log('Existe a idade no objeto pessoa');
-}
-
-if (pessoa.hasOwnProperty('ligar')) {
-    console.log('Existe o método ligar no objeto pessoa');
-}
-
-
+console.log(carro, nome);

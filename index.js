@@ -4,12 +4,12 @@ const pessoa = {
     idade: 29,
 }
 
-for (const chave in pessoa) {
-    console.log(chave, ": ", pessoa[chave]);
+// ["nome","sobrenome","idade"]
+const pessoaKeys = Object.keys(pessoa);
+
+for (let i = 0; i < pessoaKeys.length; i++) {
+    const chave = pessoaKeys[i]
+    // console.log(chave, ': ', pessoa[chave]);
 }
 
-// ["nome", "Ariel"]
-// ["sobrenome", "Sardinha"]
-for (const [chave, valor] of Object.entries(pessoa)) {
-    console.log(chave, ': ', valor);
-}
+console.log(Object.values(pessoa));

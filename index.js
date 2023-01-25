@@ -1,21 +1,19 @@
-
-const { nome: nomePessoa, sobrenome } = {
+const pessoa = {
     nome: 'Ariel',
     sobrenome: 'Sardinha',
     idade: 29,
 }
 
-
-const { marca, proprietario: { idade, nome: nomeProprietarioDoCarro }, ...carro } = {
+const carro = {
     marca: 'Toyota',
-    proprietario: {
-        nome: 'Carlos',
-        idade: 29
-    },
-    ano: 2023,
-    ligar() {
-        console.log('ligou');
-    }
+    proprietario: { ...pessoa }
 }
 
-console.log(nomePessoa, nomeProprietarioDoCarro);
+const carros = [carro];
+
+const empresa = {
+    nome: 'Toyota',
+    carros
+}
+
+console.log(empresa.carros);

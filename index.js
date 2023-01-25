@@ -1,23 +1,37 @@
 const carro = {
-    marca: 'Toyota',
-    modelo: 'Corola'
-}
+    marca: "Toyota",
+    modelo: "Corola",
+    ano: 2023,
+    proprietario: {
+        nome: 'Ariel',
+        editarNome() {
+            // o this representa o objeto pai, no caso o proprietario
 
-// atribuir novo método e propriedade pela notação de ponto
-carro.ano = 2023;
+
+            // carro.marca = 'Fiat';
+            // carro.proprietario.nome = 'Carlos';
+            // this.nome = 'Pedro';
+        }
+    },
+    "chassi": '123456',
+    "@": "@@",
+    ligar() {
+        console.log('O carro ligou');
+    },
+    desligar() {
+        console.log('O carro desligou');
+    }
+}
+carro.ano = 2024;
 carro.ligar = () => {
-    console.log('O carro ligou');
+    console.log('Novo método: O carro ligou');
 }
 
-// atribuir novo método e propriedade pela notação de colchetes
-carro['proprietario'] = 'Ariel';
-carro['editarProprietario'] = function (novoProprietario) {
-    console.log(`O novo proprietário é: ${novoProprietario}`);
-    this.proprietario = novoProprietario;
-}
+carro['proprietario'] = 'Pedro';
+carro['chassi'] = '456';
 
-// carro['editarProprietario']('Pedro');
-
-carro.editarProprietario('Daniel');
+carro['@'] = 'novo @';
 
 console.log(carro);
+
+

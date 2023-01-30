@@ -14,13 +14,16 @@ const usuario = {
             n2: '218888888'
         },
         adicionarTelefone() {
-            usuario.telefones.numero.n3 = '31777777';
+            this.numero.n3 = '31777777';
+            console.log(usuario.nome);
         }
+    },
+    trocarTipo() {
+        console.log(this);
     }
 }
-
+// usuario.trocarTipo();
 usuario.telefones.adicionarTelefone();
 console.log(usuario.telefones.numero);
-
 
 

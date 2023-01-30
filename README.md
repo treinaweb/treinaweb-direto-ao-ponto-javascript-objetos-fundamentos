@@ -14,5 +14,4 @@ Aula 01 | Vídeo 12 - Spread operator | 01:10 - Spread operator | [Download](htt
 Aula 01 | Vídeo 13 - Inteirando sobre o Objeto | 01:11 - Inteirando sobre o Objeto | [Download](https://github.com/treinaweb/treinaweb-direto-ao-ponto-javascript-objetos-fundamentos/archive/5046a461f7bd108eaa4cf8564864f49d6c318fec.zip)
 Aula 01 | Vídeo 14 - Métodos do Object, keys, values. | 01:12 - Métodos do Object, keys, values. | [Download](https://github.com/treinaweb/treinaweb-direto-ao-ponto-javascript-objetos-fundamentos/archive/afb4ffa5c2cf1613d9a0c293dd635c0d3a1c06da.zip)
 Aula 01 | Vídeo 15 - JSON vs Objeto e suas conversões | 01:13 - JSON vs Objeto e suas conversões | [Download](https://github.com/treinaweb/treinaweb-direto-ao-ponto-javascript-objetos-fundamentos/archive/03fed50b77d9ebb2c2486836a63c47c2b2a9a344.zip)
-Aula 01 | Vídeo 05 - Como modificar propriedades e métodos | 01:05 - Como modificar propriedades e métodos | [Download](https://github.com/treinaweb/treinaweb-direto-ao-ponto-javascript-objetos-fundamentos/archive/3a9cb5f2583ea920d8cac06079696c66a612cc28.zip)
 

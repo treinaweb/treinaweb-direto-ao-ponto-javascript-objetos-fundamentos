@@ -1,27 +1,26 @@
-const carro = {
-    marca: "Toyota",
-    modelo: "Corola",
-    ano: 2023,
-    proprietario: "Ariel",
-    "chassi": '123456',
-    "@": "@@",
-    ligar() {
-        console.log('O carro ligou');
+const usuario = {
+    nome: 'Ariel',
+    tipo: 'admin',
+    idade: 29,
+    residencia: {
+        rua: 'Rua x',
+        numero: 123,
+        bairro: 'Bairro y'
     },
-    desligar() {
-        console.log('O carro desligou');
+    telefones: {
+        nome: 'Ariel',
+        numero: {
+            n1: '999999999',
+            n2: '218888888'
+        },
+        adicionarTelefone() {
+            usuario.telefones.numero.n3 = '31777777';
+        }
     }
 }
-carro.ano = 2024;
-carro.ligar = () => {
-    console.log('Novo método: O carro ligou');
-}
 
-carro['proprietario'] = 'Pedro';
-carro['chassi'] = '456';
+usuario.telefones.adicionarTelefone();
+console.log(usuario.telefones.numero);
 
-carro['@'] = 'novo @';
-
-console.log(carro);
 
 
